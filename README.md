@@ -19,6 +19,13 @@ Ranked by measured impact, technical depth, how much was tested in the real worl
 | 7 | [Bluetooth battle bot](projects/07-battle-bot/) | Team member | SOLIDWORKS, Arduino, C++ | Custom armor, chassis, and drivetrain for sumo-style matches |
 | 8 | [Replacement gear in Onshape](projects/08-replacement-gear-onshape/) | Independent | Onshape | Reverse engineering a real part in a second CAD platform |
 
+## Learning tracks
+
+These are ongoing skill-building work, so they are not ranked with the projects above.
+
+- [MATLAB and robotics self-study](learning/matlab-robotics-self-study/): kinematics, MATLAB, Python, and ROS 2
+- [ANSYS Mechanical: introductory FEA training](learning/ansys-fea-training/): early-stage structural simulation
+
 ## Tools
 
 - **CAD:** SOLIDWORKS (6+ years, certified), Onshape

@@ -12,6 +12,12 @@ Copy this into `projects/NN-project-name/README.md` for each new project. Keep t
 ## Summary
 Two or three sentences. What it is, what you did, and the result.
 
+## Objective
+What the project had to achieve.
+
+## What I did
+Your specific contributions. On team projects, say which parts were yours.
+
 ## Key numbers
 A small table of the specs that matter.
 
@@ -21,13 +27,16 @@ What had to be solved, and the constraints (size, load, cost, time).
 ## Design decisions
 For each major decision: what you chose, what else you considered, and why you chose it.
 
+## Challenges
+The hardest real problems, with specifics: what happened, how you found the cause, what you changed.
+
 ## What failed
 What broke or underperformed. Say whether you expected it, what you found the cause to be, and why you picked the design that failed in the first place.
 
 ## How I fixed it
 What you changed, and what the change did to the results.
 
-## Results
+## Result
 Measured outcomes, with numbers where you have them.
 
 ## What I took from it
