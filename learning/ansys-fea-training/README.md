@@ -1,6 +1,6 @@
-# ANSYS Mechanical: Introductory FEA Training
+# ANSYS Mechanical: Structural Nonlinearity Training
 
-**Status:** Early stage. This is training, not a completed analysis project.
+**Status:** Training, not a completed analysis project. I have not yet analyzed any of my own parts.
 **Tools:** ANSYS Mechanical
 
 ## Objective
@@ -10,26 +10,24 @@ Build a foundation in finite element analysis (FEA) so I can check stress, defor
 ## What I've done
 
 - Completed introductory ANSYS Mechanical training.
-- Studied geometry representation and structural nonlinearity through related ANSYS learning credentials.
-- Started treating simulation as something that works alongside CAD and physical prototyping.
+- Moved on to ANSYS structural nonlinearity courses, because nonlinear analysis is the hard part and where I wanted to build skill.
+- Studied geometry representation along the way.
 
 <!-- NEEDS (Q-A1): which exact ANSYS courses or credentials, and when? I will list them by name. -->
-<!-- NEEDS (Q-A2): have you run any analysis on your own part yet? If so, which part and what did it show? If not, we say so. -->
 
 ## Why this matters to me
 
-Several of my printed parts failed under load. Testing showed me what broke but only after I made the part. FEA is a way to catch some of that earlier.
+Several of my printed parts failed under load. Testing showed me what broke, but only after I made the part. FEA is a way to catch some of that earlier.
 
-<!-- NEEDS (Q-A3): is that your real reason? A natural first target is the cycloidal housing, which flexed under load. Do you plan to analyze it, and is that the goal? -->
+<!-- NEEDS (Q-A2): is that your real reason? A natural first target is the cycloidal shaft or housing. Do you plan to analyze one, and is that the goal? -->
 
 ## Challenges
 
-- Learning the assumptions and limits behind numerical structural simulation.
-- Understanding how the model geometry and the material behavior change the answer.
-- Connecting simulation results to real engineering decisions.
+The hard part was applying a material meant for large deformations so the simulation could solve it accurately. That is where nonlinear analysis gets difficult, because the result depends on the material model and the solver reaching a converged answer.
 
-<!-- NEEDS (Q-A4): these are general. What was one concept that did not make sense at first (meshing, boundary conditions, contact, nonlinearity), and what finally made it click? -->
+<!-- NEEDS (Q-A3): which material or model was it (hyperelastic, plastic), what were you simulating, and what went wrong (non-convergence, odd results)? Did you get it to solve in the end? If this was tied to the internship, tell me so I keep it out. -->
+<!-- NEEDS (Q-A4): was the nonlinearity in the material, the contact, the geometry, or all three? -->
 
 ## Result
 
-An early foundation in FEA, built on my own initiative beyond my coursework. I am describing this as a learning stage, not advanced simulation expertise.
+A foundation in nonlinear FEA, built on my own initiative beyond my coursework. I am not claiming advanced simulation expertise, and I have not validated any analysis against a real part yet.

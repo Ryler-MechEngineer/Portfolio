@@ -15,8 +15,6 @@ Build the math and programming skills I need to control robotic systems, on top 
 - Started learning Python to broaden my programming toolkit.
 - Set up ROS 2 (Jazzy) on Windows and ran turtlesim as a first test.
 
-<!-- NEEDS (Q-S1): you described ROS as a future goal, but your notes say you already set up ROS 2 and tested turtlesim. Which is accurate right now? The line above follows your notes. -->
-
 ## Why I chose this path
 
 My background is mechanical design. A robot also needs the math and software that tell the mechanism what to do, and I did not want to hand that half to someone else.
@@ -25,11 +23,11 @@ My background is mechanical design. A robot also needs the math and software tha
 
 ## Challenges
 
-- Moving from mechanical design into mathematical modeling and programming.
+- Moving from mechanical design into mathematical modeling and programming, starting with no idea where to begin.
 - Seeing how geometry, joint angles, workspace constraints, and physical limits interact.
-- Learning new software while carrying coursework and leadership roles.
+- Finding the time. I gave up scrolling on my phone to make room for learning new skills, on top of coursework and leadership roles.
 
-<!-- NEEDS (Q-S3): these are general. What was the most confusing moment, a concept or an error, and how did you get through it? What did you stop doing or push back to make time? -->
+<!-- NEEDS (Q-S3): what was the most confusing moment, a concept or an error, and how did you get through it? -->
 
 ## Result
 

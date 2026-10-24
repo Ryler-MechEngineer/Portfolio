@@ -6,7 +6,7 @@
 
 ## Summary
 
-I led the mechanical side of a mobile robot meant to navigate on its own and dispense items. I was responsible for the physical system: the drivetrain, the structure, and the platform that carries the upper components. I did not own the full electronics and software stack.
+I led the mechanical side of a mobile robot meant to navigate on its own and dispense items. I was responsible for the physical system: the drivetrain, the structure, and the platform that carries the upper components. I finished the mechanical assembly and helped integrate the electronics that tied into it. I did not own the full electronics and software stack.
 
 <!-- IMAGE: images/cad-full-model.png (full CAD model with callouts: drivetrain, frame, upper platform) -->
 <!-- IMAGE: images/assembled-robot.png (photo of the assembled robot) -->
@@ -34,24 +34,24 @@ Build a mobile robot that combines a mechanical platform with electrical, sensin
 - Helping teammates who were less experienced with design make parts that worked.
 - Moving from a CAD assembly to a physical build while keeping the design practical.
 
-<!-- NEEDS (Q3.3): these are general. Give me one specific interface problem between mechanical and electrical, such as a mounting conflict or wire routing, and what you changed. -->
-<!-- NEEDS (Q3.4): what was one design you had to redo because it did not survive going from CAD to hardware? -->
+The mechanical-electrical integration did not cause problems on my side.
 
 ## What failed
 
-PLA servo horns and other PLA components failed under load. The team moved to metal components where that made sense.
+- **Poorly supported wheels.** When the robot tried to move forward, the forces stretched the wheel supports backward and flexed the metal carriage.
+- **Deformed PLA shafts.** The shafts were PLA and deformed under load, the same way my cycloidal shaft did.
+- **PLA servo horns.** PLA servo horns and other PLA components failed under load, and the team moved to metal components where that made sense.
 
-<!-- NEEDS (Q3.5): which exact parts failed, at what load or in what motion, and how did they fail (crack, strip, creep)? -->
-<!-- NEEDS (Q3.6): did you expect PLA to be marginal there? Why did you print it first anyway? -->
-<!-- NEEDS (Q3.7): which parts became metal, how were they made, and did the fix hold? -->
+<!-- NEEDS (Q3.3): how did you fix the wheel supports (gussets, a wider base, a different mount)? Did the fix hold? -->
+<!-- NEEDS (Q3.4): did you expect any of this before it was built? Why were the shafts printed in PLA to begin with? -->
+<!-- NEEDS (Q3.5): which parts became metal, how were they made, and did that fix the shafts? -->
 
 ## Result
 
-The mechanical assembly was completed and documented in a project update. I am not claiming a fully operational autonomous robot.
-
-<!-- NEEDS (Q3.8): your public description says you built and wired the electronics, but an earlier update says wiring and full-system testing were still ahead. What was the final status when your role ended? -->
-<!-- NEEDS (Q3.9): the teammate recommendation says year-long project. Your notes say November 2025 to May 2026 and about a 3-month development cycle. Which is right? -->
+I finished the mechanical assembly, documented in a project update, and helped integrate the electronics tied to the mechanical side. I am not claiming a fully operational autonomous robot.
 
 ## What I took from it
 
-Something working in CAD is not the same as something that survives real loads. PLA is good for checking geometry and fit, and parts that carry load need to be designed and made for it.
+Something working in CAD is not the same as something that survives real loads. PLA is good for checking geometry and fit, and parts that carry load need to be designed and made for it. Wheel supports have to be designed for the forces of driving, not just to hold the wheel.
+
+<!-- NEEDS (Q3.6): is that last sentence how you would say it? Your own lessons override mine. -->

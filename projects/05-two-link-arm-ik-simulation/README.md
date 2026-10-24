@@ -26,25 +26,16 @@ Learn the math and simulation tools needed to command a robot arm to reach speci
 
 ## Challenges
 
-- Learning a new programming and simulation environment.
-- Seeing why an inverse kinematics equation can give a mathematical answer that the real arm cannot reach.
-- Finding target points outside the reachable workspace.
-- Handling joint-angle limits and changing the trajectory without giving up on the square.
-- Connecting the math to the simulated motion.
+Nothing in this project broke. The challenge was that all of it was new to me and I did not know how to start. I had to learn MATLAB, the kinematics, and Simulink at the same time.
 
-<!-- NEEDS (Q5.1): these are general. What was the first thing that actually broke? Tell me what the arm or the code did, what you saw, and how you found the cause. -->
-
-## Where the first attempt failed
-
-A solution that works on paper is not always one the arm can reach. There were two problems:
+Along the way I ran into the limits of the arm itself:
 
 - **Elbow-up and elbow-down.** Each reachable point has two valid joint solutions, so I had to pick one and keep it consistent along the path.
-- **Reachability and joint limits.** Some target points were outside the workspace or past a joint limit. I adjusted the desired path so every point was a valid, physically possible configuration.
+- **Reachability and joint limits.** A solution that works on paper is not always one the arm can reach. Some target points were outside the workspace or past a joint limit, so I adjusted the path so every point was a valid configuration.
 
-<!-- NEEDS (Q5.2): which joint limits and link lengths did you use, and what did the unreachable path look like before you fixed it? -->
-<!-- NEEDS (Q5.3): how did you detect an unreachable point in code (for example the acos domain check)? -->
-<!-- NEEDS (Q5.4): did you expect the first path to be unreachable? Why did you choose a square? -->
-<!-- NEEDS (Q5.5): when you changed the path, how much smaller or shifted did the square get, and what did you give up? -->
+<!-- NEEDS (Q5.1): you said nothing broke, but you also changed the path because some square points were unreachable. Is that accurate? If so, I would describe that as the first path not working, and I need to know what you saw (an error, a NaN, the arm stopping). -->
+<!-- NEEDS (Q5.2): which link lengths and joint limits did you use? How much did you shrink or shift the square, and what did you give up? -->
+<!-- NEEDS (Q5.3): how did you detect an unreachable point in code? -->
 
 ## Result
 
@@ -58,5 +49,5 @@ A mentor I met on LinkedIn, an automation engineer, suggested extending this to 
 
 Inverse kinematics has more than one answer, and sometimes none. The geometry of the workspace decides what is possible before any controller gets involved.
 
-<!-- NEEDS (Q5.6): okay to keep the line about learning with an AI tutor, or do you want different wording? -->
-<!-- NEEDS (Q5.7): upload the .m and .slx files to the matlab/ folder if you want them public -->
+<!-- NEEDS (Q5.4): okay to keep the line about learning with an AI tutor? Your own lessons override mine. -->
+<!-- NEEDS (Q5.5): upload the .m and .slx files to the matlab/ folder if you want them public -->

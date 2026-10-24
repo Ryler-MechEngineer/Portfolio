@@ -1,15 +1,12 @@
 # Cycloidal Gear Reducer for the Rover Arm
 
-**Role:** Designer, University Rover Challenge (Robotics and Automation Society). Mechanical Team Lead since May 2026.
-**Started:** September 2024
+**Role:** Designer, University Rover Challenge (Robotics and Automation Society). I started this in September 2024 as a team member and became Mechanical Team Lead in May 2026, so all of the reducer work below happened before I was lead.
 **Tools:** SOLIDWORKS, 3D printing (PLA, heat-treated PLA, carbon-fiber PLA)
 **Focus:** Gear-reducer design, fit and tolerance, failure analysis, iterative redesign
 
-<!-- NEEDS (Q2.0): the start date of September 2024 came from your notes, but your lead role started May 2026. When did this project start, and did the failed versions come before or after you became lead? -->
-
 ## Summary
 
-I designed, modeled, printed, and tested a cycloidal gear reducer for a rover arm joint. The final design gives a 12:1 ratio and cut volume by about 50%. It also failed in several ways on the way there, and those failures drove the biggest design changes.
+I designed, modeled, printed, and tested a cycloidal gear reducer for a rover arm joint. The best version gives a 12:1 ratio and cut volume by about 50%. The shaft kept deforming across versions and I never fully fixed it. After that I decided to move to a different gearbox type instead of patching this one.
 
 <!-- IMAGE: images/cad-assembly.png (full CAD assembly) -->
 <!-- IMAGE: images/exploded-view.png (exploded view with labels) -->
@@ -29,62 +26,68 @@ Get reduced output speed and higher torque from a compact reducer for a robotic 
 | Pin diameter | 7 mm |
 | Disc hole diameter | 14.4 mm |
 | Eccentricity | 2.5 mm |
+| Disc clearances used | 0.1 mm and 0.2 mm combined (two offset discs) |
 | Volume | About 50% smaller |
 | Best tested load | About 0.5 kg lifted (one modified version) |
 
 ## What I did
 
-- Modeled the reducer in SOLIDWORKS around a cycloidal disc, eccentric input, pins, and output components.
+- Modeled the reducer in SOLIDWORKS around two offset cycloidal discs, an eccentric input, pins, and output components.
 - 3D printed the parts, assembled the mechanism, tested it, and revised it based on where it failed.
 - Worked through how gear geometry, fit, and clearances affect performance.
 
 ## Design decisions
 
-An arm joint needs a lot of torque in a small package. I wanted a high reduction ratio from a single stage in as little volume as possible.
+**Why a cycloidal reducer.** An arm joint needs a lot of torque in a small package. I wanted a high reduction ratio from a single stage in as little volume as possible.
 
-<!-- NEEDS (Q2.1): what did you compare it against (planetary, harmonic, worm) and what made cycloidal win? -->
+**Why shell output.** With the output on the outer shell, the arm attaches to the outside, which makes the arm easy to stabilize, and I can make the internal parts very strong and sturdy. If the outside were the fixed part, the arm would be supported on one end only.
+
+**Why two clearances.** There are two offset discs inside, so I combined two clearances, 0.1 mm and 0.2 mm. That gave me the best result of what I tried.
+
+<!-- NEEDS (Q2.1): what did you compare cycloidal against (planetary, harmonic, worm) before choosing it? -->
 <!-- NEEDS (Q2.2): the 50% volume reduction is compared to what? -->
-<!-- NEEDS (Q2.3): why 11 lobes and 12 rollers, 7 mm pins, 2.5 mm eccentricity? What is the extra clearance in the 14.4 mm holes? -->
+<!-- NEEDS (Q2.3): why 11 lobes and 12 rollers, 7 mm pins, 2.5 mm eccentricity? What is the 14.4 mm hole, and what are the 0.1 mm and 0.2 mm applied to (roller holes, discs, pins)? -->
 <!-- NEEDS (Q2.4): is the 12:1 from the shell-output version, and was the earlier disc-output version about 11:1? -->
 
 ## Challenges
 
-- Getting the disc, rollers, pins, and eccentric motion to work together without binding.
+- Getting the discs, rollers, pins, and eccentric motion to work without binding.
 - Holding dimensional accuracy and clearances in 3D-printed parts.
-- Finding out why early versions failed instead of assuming the CAD would work as modeled.
+- Finding out why early versions failed instead of trusting the CAD.
 - Balancing compactness, torque transmission, friction, and durability.
 
-<!-- NEEDS (Q2.5): these are general. Pick the hardest one and tell me the specifics: what bound, where, what clearance did you try, what did you change, and what did it do? -->
+The hardest one was the shaft. It kept deforming across versions. My best guess, which I have not confirmed, is that my math and tolerances were slightly off, so extreme loads were passing into the shaft instead of being shared by the rollers.
 
 ## What failed
 
-These are the failures I saw while testing printed versions:
-
+- **Shaft deformation.** The shaft kept deforming. This was the main failure and the reason for the redesign.
 - **Uneven contact.** The load was not always shared evenly across the rollers.
 - **Housing deflection.** The housing could flex and twist under load.
 - **Cracked parts.** PLA cracked and snapped under load.
 - **Backlash.** The output had slack and a springy feel.
 - **Shaft failure.** Earlier versions that were expected to lift more eventually broke at the shaft.
 
-<!-- NEEDS (Q2.6): did you expect any of these before printing? Which ones, and what did you do ahead of time to reduce them? -->
-<!-- NEEDS (Q2.7): for each failure, what did you find was the cause, and how did you confirm it? -->
+**What I expected and what I did not.** I expected the PLA to flex a little with the shell output, because two eccentric discs rotate inside it. I did not expect much trouble from the shaft. I thought it would do better under compression, and it was a D-shaft. It deformed anyway.
 
-## How I fixed it
+<!-- NEEDS (Q2.5): "the 3 shaft kept deforming" in your message: do you mean a 3 mm shaft, or the third version's shaft? -->
+<!-- NEEDS (Q2.6): how did you see it deform (bent, twisted, flat of the D crushed)? Where did it fail? That tells us whether it was torque, bending, or both. -->
+<!-- NEEDS (Q2.7): did you check the math or tolerances after a failure to test your guess? -->
 
-I changed the output approach to a shell-output configuration. One modified version lifted about 0.5 kg. I also tried heat-treated PLA and carbon-fiber PLA, and I am considering stainless steel for the next iteration.
+## How I fixed it, and where it stands
 
-<!-- NEEDS (Q2.8): why shell output specifically, and what did it change about the failures above? -->
-<!-- NEEDS (Q2.9): did the heat-treated and carbon-fiber parts help? What did you measure or see? -->
+I changed the output to a shell-output configuration, and one modified version lifted about 0.5 kg. I also tried heat-treated PLA and carbon-fiber PLA, and I have considered stainless steel.
+
+I did not solve the shaft deformation. I am now switching to a Wolfrom planetary gearbox, because it should give me a high ratio without the precise manufacturing that cycloidal discs need.
+
+<!-- NEEDS (Q2.8): did heat-treated and carbon-fiber parts help? What did you see? -->
+<!-- NEEDS (Q2.9): "Wolfrom" is my guess for how you spelled it. Is that right? What ratio and what size are you targeting? -->
 
 ## Result
 
 A physical cycloidal reducer that I improved through several printed versions, with real experience in mechanism design, fit adjustment, and load testing. It is relevant to robotics, industrial automation, and compact actuators.
 
-<!-- NEEDS (Q2.10): do you have test data, such as the load or torque reached and the failure that prompted the biggest redesign? -->
-
 ## What I took from it
 
-Printed tests showed things CAD did not: where load concentrates, how much a housing flexes, and how PLA behaves near its limit. I revise designs from what I observe on the bench, not from the model alone.
+Printed tests showed things CAD did not: where load concentrates, how much a housing flexes, and how PLA behaves near its limit.
 
-<!-- NEEDS (Q2.11): your own lessons, especially about tolerances and material choice -->
-<!-- NEEDS (Q2.12): next iteration plan and target (torque, mass, material) -->
+<!-- NEEDS (Q2.10): your own lessons, especially about tolerances, material choice, and choosing a mechanism. -->
