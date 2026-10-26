@@ -13,7 +13,7 @@ I led the mechanical side of a mobile robot meant to navigate on its own and dis
 
 ## Objective
 
-Build a mobile robot that combines a mechanical platform with electrical, sensing, and software subsystems so it can navigate and dispense items on its own.
+Design and build an autonomous cart that dispenses snacks, combining a mechanical platform with electrical, sensing, and software subsystems.
 
 ## What I did
 
@@ -23,6 +23,7 @@ Build a mobile robot that combines a mechanical platform with electrical, sensin
 - Coordinated subsystem work so the pieces would assemble into one robot.
 - A teammate's public LinkedIn recommendation credits me with contributing critical components to the project.
 
+<!-- NEEDS (Q3.0): your printed portfolio says you led "the mechanical system and electrical integration." Your correction was that you helped with the electronics tied to the mechanical side and did not own the full stack. I kept the correction on both. -->
 <!-- NEEDS (Q3.1): why this drivetrain layout (wheel type, count, motor choice) over the alternatives? -->
 <!-- NEEDS (Q3.2): how did you size the frame and platform (payload, vending mechanism weight, tipping)? -->
 
@@ -48,7 +49,7 @@ The mechanical-electrical integration did not cause problems on my side.
 
 ## Result
 
-I finished the mechanical assembly, documented in a project update, and helped integrate the electronics tied to the mechanical side. I am not claiming a fully operational autonomous robot.
+I finished the mechanical assembly, documented in a project update, and helped integrate the electronics tied to the mechanical side. The cart drove briefly before the PLA shafts deformed, so this is a failed result. I am not claiming a fully operational autonomous robot.
 
 ## What I took from it
 

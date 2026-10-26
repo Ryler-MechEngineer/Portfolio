@@ -6,7 +6,7 @@
 
 ## Summary
 
-We built a two-axis, servo-driven platform that balances a ball on its surface using feedback control. The platform tilts on two axes driven by MG90S servos (pins 9 and 10), and a PID controller turns the ball's measured position into servo commands. I designed and built the physical platform, integrated the servos, and programmed and tuned the PID.
+We built a two-axis, servo-driven platform that balances a ball on its surface using feedback control. The platform tilts on two axes driven by MG90S servos (pins 9 and 10), and a PID controller turns the ball's measured position into servo commands. I designed the universal pivot joint and integrated the plate sensor, and I worked on PID tuning and testing.
 
 <!-- IMAGE: images/platform-with-ball.png -->
 <!-- IMAGE: images/axes-diagram.png (simple diagram labeling the two axes and servos) -->
@@ -20,7 +20,7 @@ Balance a ball by tilting a platform in response to where the ball is.
 
 <!-- NEEDS (Q4.1): why a touchscreen vs other position sensing? Why MG90S servos? Why this linkage geometry? -->
 <!-- NEEDS (Q4.2): was there a CAD model? What did you design versus buy? -->
-<!-- NEEDS (Q4.3): this was a team project. Which parts were yours and which were teammates'? -->
+<!-- NEEDS (Q4.3): the universal pivot joint, sensor integration, and PID tuning are yours per your printed portfolio. Who did the rest? An earlier version of this page said you designed the whole platform, so I narrowed it. -->
 
 ## Challenges
 
@@ -28,13 +28,14 @@ Balance a ball by tilting a platform in response to where the ball is.
 - Tuning the gains so the platform reacts quickly without oscillating.
 - Accounting for mechanical movement and servo response when judging the control behavior.
 - Making the mechanical design fit what the controller needs.
+- Finding a ball heavy enough to activate the plate sensor.
 
 <!-- NEEDS (Q4.4): these are general. What did the ball do at first (oscillate, drift, fall off)? What did you change in P, I, and D to fix it, and in what order? -->
 <!-- NEEDS (Q4.5): did backlash or servo limits get in the way? Did you expect that? -->
 
 ## Result
 
-Hands-on experience tuning a feedback system where the mechanics and the software directly affect each other. The public project description gives no settling time, tracking error, or final performance figure.
+A ball-balancing platform that could counteract external forces on the ball. I do not have a settling time, tracking error, or other measured figure for it.
 
 <!-- NEEDS (Q4.6): how long does it hold the ball, and how does it recover from a nudge? Even rough numbers help. -->
 <!-- EVIDENCE: video of the ball balancing, the PID code (put it in a code/ folder), and any tuning notes -->

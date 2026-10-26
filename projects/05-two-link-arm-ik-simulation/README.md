@@ -37,6 +37,10 @@ Along the way I ran into the limits of the arm itself:
 <!-- NEEDS (Q5.2): which link lengths and joint limits did you use? How much did you shrink or shift the square, and what did you give up? -->
 <!-- NEEDS (Q5.3): how did you detect an unreachable point in code? -->
 
+## Details from my code
+
+Both links are 3 units long in my MATLAB script, and the square runs from (1, 1) to (3, 3). The arm follows target coordinates and never takes joint angles as direct commands.
+
 ## Result
 
 The two-link arm traces a square in simulation using inverse kinematics. Next I plan to extend the method to a third link.

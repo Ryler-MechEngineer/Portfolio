@@ -6,7 +6,7 @@
 
 ## Summary
 
-I designed, modeled, printed, and tested a cycloidal gear reducer for a rover arm joint. The best version gives a 12:1 ratio and cut volume by about 50%. The shaft kept deforming across versions and I never fully fixed it. After that I decided to move to a different gearbox type instead of patching this one.
+I designed, modeled, printed, and tested a cycloidal gear reducer for a rover arm joint. The best version gives a 12:1 ratio and cut volume by about 50%. The shaft kept deforming in the 3D-printed versions. The latest version uses aluminum rods and a steel shaft, and I have decided to move to a different gearbox type.
 
 <!-- IMAGE: images/cad-assembly.png (full CAD assembly) -->
 <!-- IMAGE: images/exploded-view.png (exploded view with labels) -->
@@ -77,14 +77,16 @@ The hardest one was the shaft. It kept deforming across versions. My best guess,
 
 I changed the output to a shell-output configuration, and one modified version lifted about 0.5 kg. I also tried heat-treated PLA and carbon-fiber PLA, and I have considered stainless steel.
 
-I did not solve the shaft deformation. I am now switching to a Wolfrom planetary gearbox, because it should give me a high ratio without the precise manufacturing that cycloidal discs need.
+The shaft kept deforming in the 3D-printed versions. The latest version uses aluminum rods and a steel shaft. I am now switching to a Wolfrom planetary gearbox, because it should give me a high ratio without the precise manufacturing that cycloidal discs need.
+
+<!-- NEEDS (Q2.11): your printed portfolio says the result is 12:1 with aluminum rods and a steel shaft, while this page said the shaft problem was not solved. Did the steel shaft stop the deformation? If yes, I will say so. -->
 
 <!-- NEEDS (Q2.8): did heat-treated and carbon-fiber parts help? What did you see? -->
 <!-- NEEDS (Q2.9): "Wolfrom" is my guess for how you spelled it. Is that right? What ratio and what size are you targeting? -->
 
 ## Result
 
-A physical cycloidal reducer that I improved through several printed versions, with real experience in mechanism design, fit adjustment, and load testing. It is relevant to robotics, industrial automation, and compact actuators.
+A 12:1 cycloidal reducer with aluminum rods and a steel shaft, improved through several printed versions, with real experience in mechanism design, fit adjustment, and load testing. It is relevant to robotics, industrial automation, and compact actuators.
 
 ## What I took from it
 
