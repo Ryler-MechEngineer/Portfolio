@@ -11,7 +11,7 @@ Build the math and programming skills I need to control robotic systems, on top 
 
 - Started learning MATLAB for mathematical modeling and robotic-arm simulation.
 - Learned to derive forward and inverse kinematics for a two-link arm.
-- Went from basic joint motion to an inverse-kinematics-driven square trajectory. The full write-up is in the [two-link arm project](../../projects/05-two-link-arm-ik-simulation/).
+- Went from basic joint motion to an inverse-kinematics-driven square trajectory. The full write-up is in the [two-link arm project](../../projects/two-link-arm-ik-simulation/).
 - Started learning Python to broaden my programming toolkit.
 - Set up ROS 2 (Jazzy) on Windows and ran turtlesim as a first test.
 

@@ -10,13 +10,14 @@ Ranked by measured impact, technical depth, how much was tested in the real worl
 
 | # | Project | My role | CAD and tools | What it shows |
 |---|---------|---------|---------------|---------------|
-| 1 | [Fixturing and process improvement, Utility Global](projects/01-utility-global-fixturing/) | Mechanical Engineering Intern | SOLIDWORKS | Production results: failure rate down from over 30% to 4%, output up 50% (per a supervisor's public recommendation) |
-| 2 | [Cycloidal gear reducer for the rover arm](projects/02-cycloidal-reducer/) | Designer (later Mechanical Team Lead) | SOLIDWORKS, 3D printing | 12:1 reducer, repeated shaft failures, and the decision to change topology |
-| 3 | [AI vending machine robot](projects/03-ai-vending-machine-robot/) | Engineering Team Lead | SOLIDWORKS, 3D printing | Full mechanical system for a team robot, and the PLA parts that failed under load |
-| 4 | [Ball-balancing platform](projects/04-ball-balancing-platform/) | Team member | Arduino, C++, PID | Closed-loop control on a physical two-axis mechanism |
-| 5 | [Two-link arm: inverse kinematics and simulation](projects/05-two-link-arm-ik-simulation/) | Independent | MATLAB, Simulink, Simscape Multibody | Kinematics, workspace limits, and simulation (software only, no hardware) |
-| 6 | [Bluetooth battle bot](projects/06-battle-bot/) | Team member | SOLIDWORKS, Arduino, C++ | Custom armor, chassis, and drivetrain for sumo-style matches |
-| 7 | [Replacement gear in Onshape](projects/07-replacement-gear-onshape/) | Independent | Onshape | Reverse engineering a real part in a second CAD platform |
+| 1 | [Utility Global: fixture and shipping container design](projects/utility-global-internship/) | Mechanical Engineering Intern | SOLIDWORKS, 3D printing (TPU) | Failure rate down from over 30% to 4%, output up 50%, and shipping capacity up from about 5 to 120 units per container |
+| 2 | [210 Robotics: VEX U competition robot](projects/210-robotics-vex-robot/) | Co-founder, Project Manager, design checker, match day coach | Design review, Gantt tracking | Semifinals at our first competition, a drivetrain fix that cut reassembly from 20 minutes to under 5, and a robot that scored 150+ in practice and about 40 at the event |
+| 3 | [Cycloidal gear reducer for the rover arm](projects/cycloidal-reducer/) | Designer (later Mechanical Team Lead) | SOLIDWORKS, 3D printing | 12:1 reducer, repeated shaft failures, and the decision to change topology |
+| 4 | [AI vending machine robot](projects/ai-vending-machine-robot/) | Engineering Team Lead | SOLIDWORKS, 3D printing | Full mechanical system for a team robot, and the PLA parts that failed under load |
+| 5 | [Ball-balancing platform](projects/ball-balancing-platform/) | Team member | Arduino, C++, PID | Closed-loop control on a physical two-axis mechanism |
+| 6 | [Two-link arm: inverse kinematics and simulation](projects/two-link-arm-ik-simulation/) | Independent | MATLAB, Simulink, Simscape Multibody | Kinematics, workspace limits, and simulation (software only, no hardware) |
+| 7 | [Bluetooth battle bot](projects/battle-bot/) | Team member | SOLIDWORKS, Arduino, C++ | Custom armor, chassis, and drivetrain for sumo-style matches |
+| 8 | [Replacement gear in Onshape](projects/replacement-gear-onshape/) | Independent | Onshape | Reverse engineering a real part in a second CAD platform |
 
 ## Learning tracks
 
@@ -35,7 +36,7 @@ These are ongoing skill-building work, so they are not ranked with the projects 
 ## Currently
 
 - Mechanical Team Lead, University Rover Challenge team (Robotics and Automation Society)
-- Co-founder and Project Manager, 210 Robotics (VEX U)
+- Co-founder and Project Manager, 210 Robotics (VEX U), about 60 members
 - Resident Advisor, UTSA
 
 ## Contact

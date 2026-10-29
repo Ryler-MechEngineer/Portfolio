@@ -1,6 +1,6 @@
 # Project Page Template
 
-Copy this into `projects/NN-project-name/README.md` for each new project. Keep the section order so every page reads the same way.
+Copy this into `projects/project-name/README.md` for each new project. Keep the section order so every page reads the same way.
 
 ```markdown
 # Project Name
@@ -46,7 +46,7 @@ Lessons, in plain first-person language.
 ## Folder layout
 
 ```
-projects/NN-project-name/
+projects/project-name/
   README.md
   images/   photos, CAD screenshots, diagrams
   cad/      STEP and STL exports (STL files preview in 3D on GitHub)
